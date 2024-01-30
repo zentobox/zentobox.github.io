@@ -1,1 +1,1 @@
-This is my temporary portfolio website.
+permalink: /index.html
