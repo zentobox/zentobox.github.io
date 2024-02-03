@@ -2,138 +2,201 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type = "text/css">
       body{
         background-color: black;
-        background-image: url(background.jpg);
+        padding: 0;
+        margin: 0;
+        text-align: center;
         background-repeat: no-repeat;
         background-position: top;
-        background-size: auto;
+        background-size: contain;
       }
-      h1{
-        font-family: Quostige;
-        color: white;
-        font-size: 50px;
-        margin-top: 10px;
+      .headers{
+        position: relative;
         text-align: center;
+        color: white;
+        width: 100vw;
+
+      }
+      .one{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        width: 70%;
+        max-width: 450px;
+        min-width: 450px;
+      }
+      marquee{
+        font-family: Coolvetica;
+        color: white;
+        font-size: 80px;
+        margin-top: 25px;
+        margin-bottom: 45px;
+        letter-spacing: 3px;
+      }
+      .marquee-container{
+        position: absolute;
+        top: 5%;
+        right: 0;
+        left: 0;
+        white-space: nowrap;
+        color: white;
+      }
+      .blink {
+        animation: opacity 1.7s ease-in-out infinite;
+        opacity: 1;
+      }
+      @keyframes opacity{
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
       h3{
-        font-family: Quostige;
+        position: absolute;
+        width: 100%;
+        font-family: SonoSemiBold;
         color: white;
-        font-size: 35px;
-        margin-top: -25px;
+        font-size: 28px;
+        margin-top: 290px;
         text-align: center;
+        opacity: 1;
       }
-      h4{
-        font-family: LemonMilk;
-        font-size: 16pt;
-        color: white;
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 20px;
-        letter-spacing: 1px;
-      }
-      ul{
-        width: 220px;
-        background: rgba(36, 0, 144, 0.5);
-        float: left;
-        font-family: LionCub;
-        list-style: none;
-        margin-left: 45px;
-        padding: 0;
-        border: 0;
-        margin-right: 20px;
-        font-size: 22pt;
-        margin-top: 0px;
-      }
-      a{
-        display: block;
-        border-bottom: 5px solid #190061;
-        padding: 5px 0px 3px 20px;
+      h3 a {
         text-decoration: none;
         color: white;
       }
-      a:hover{
-        background: #3500D3;
+      h3 a:hover{
         text-decoration: underline;
       }
-      li{
-        padding: 0;
-        margin: 0;
+      h4{
+        font-family: SonoLight;
+        font-size: 13pt;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        letter-spacing: 1px;
       }
-      #box{
-        width: 60%;
-        max-width: 850px;
-        background: #282828;
-        margin-left: 30%;
-        margin-bottom: 5%;
-        padding: 15px;
-        border-radius: 20px;
-        box-shadow: 0 0 15px 10px #3500D3;
-        background: rgba(12, 0, 50, 0.75);
+      .social-link {
+        width: auto;
+        position: absolute;
+        bottom: 233px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        min-width: 400px;
+        align-items: flex-end;
 
       }
-      #box .one{
-        float: left;
-        margin: 25px;
-        display: block;
-        border-radius: 50%;
-        width: 60%;
-        padding: 10px;
-        background: #3500D3;
-        max-width: 500px;
-        max-height: 500px;
+      .instagram-icon {
+        width: 30px;
+        height: auto;
+        margin: 0 8px;
+        transition: transform 0.3s ease;
+      }
+      .instagram-link:hover .instagram-icon {
+        transform: scale(1.2);
+      }
+      #banner{
+        width: 450px;
+        height: 40px;
+        background: #white;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+      }
+      #box{
+        max-width: 450px;
+        min-width: 300px;
+        margin: auto;
+        padding: 100px;
+        border-radius: 40px;
+        margin-top: -73px;
+        margin-bottom: -50px;
       }
       p{
         color: white;
-        text-align: justify;
+        text-align: center;
         font-size: 14pt;
         font-family: ModernSansLight;
       }
       @font-face {
-        font-family: LionCub;
-        src: url(LionCub.ttf);
+        font-family: LemonMilkLight;
+        src: url(LEMONMILK-Light.otf);
       }
       @font-face {
         font-family: ModernSansLight;
         src: url(ModernSansLight.otf);
       }
       @font-face {
-        font-family: Quostige;
-        src: url(Quostige.ttf);
-      }
-      @font-face {
         font-family: LemonMilk;
         src: url(LemonMilk.otf);
       }
+      @font-face {
+        font-family: Coolvetica;
+        src: url(Coolvetica.otf);
+      }
+      @font-face {
+        font-family: SonoSemiBold;
+        src: url(Sono-SemiBold.ttf)
+      }
+      @font-face {
+        font-family: SonoLight;
+        src: url(Sono-Light.ttf)
+      }
+      @font-face {
+        font-family: BaseNeueTrial;
+        src: url(BaseNeueTrial-CondensedMedium.ttf);
+      }
     </style>
+    <title>Zento Box</title>
   </head>
   <body>
-    <marquee><h1> ZENTO BOX </h1></marquee>
-    <h3> Music Portfolio </h3>
-    <h4> Projects </h4>
-    <ul id = "projects">
-      <li><a href = "Bian_Portfolio/Bian_AboutMe/Bian_aboutme.html">About Me</a></li>
-      <li><a href = "Bian_Portfolio/Bian_Basic/Bian_basic.html">Basic Page</a></li>
-      <li><a href = "Bian_Portfolio/Bian_Construction/Bian_boxmodel.html">Box Model</a></li>
-      <li><a href = "Bian_Portfolio/Bian_Construction/Bian_centerednavigation.html">Centered Navigation</a></li>
-      <li><a href = "Bian_Portfolio/Bian_Construction/Bian_horizontalnavigation.html">Horizontal Navigation</a></li>
-      <li><a href = "Bian_Portfolio/Bian_NotablePerson/Bian_notableperson.html">Notable Person</a></li>
-      <li><a href = "Bian_Portfolio/Bian_SunnyWarm/Bian_sunnywarm.html">Sunny and Warm</a></li>
-      <li><a href = "Bian_Portfolio/Bian_Wrapped/Bian_wrapped.html">Wrapped Images</a></li>
-      <li><a href = "Bian_Portfolio/Bian_Construction/Bian_verticalnavigation.html">Vertical Navigation</a></li>
-      <li><a href = "Bian_Portfolio/Bian_CareerExploration/Bian_careerexploration.html">Career Exploration</a></li>
-      <li><a href = "Bian_Portfolio/Bian_TopicWebsite/Bian_topicwebsiteabout.html">Topic Website</a></li>
-    </ul>
+    <div class = "headers">
+      <img src = "orangeshirt.JPEG" class = "one">
+      <div class = "marquee-container">
+        <marquee behavior = "scroll"
+          direction = "left"
+          scrollamount = "10"
+          loop = "true"
+          >ZENYA BIAN IS ZENTO BOX</marquee>
+      <h3 class = "blink"><a href = "https://open.spotify.com/album/5ouocuC1aNA9Mv1s58Hrfz?si=2HIrbRwoSTej__iGhdtk1Q">SITCOM / FRED OUT NOW</a></h3></div>
+      <div class = "social-link">
+        <a href="https://www.instagram.com/zentoboxoxo/" target="_blank" rel="noopener noreferrer" class="instagram-link">
+          <img src="instagram-icon.png" alt="Instagram Icon" class="instagram-icon"></a>
+        <a href="https://open.spotify.com/artist/1mmcLG841sA4sjMdkwAld8?si=NWuMhTDQTi-sg8T8dbKyag" target="_blank" rel="noopener noreferrer" class="instagram-link">
+          <img src="spotify-icon.png" alt="Spotify Icon" class = "instagram-icon"></a>
+        <a href="https://www.tiktok.com/@zentoboxoxo" target="_blank" rel="noopener noreferrer" class="instagram-link">
+          <img src="tiktok-icon.png" alt="Tiktok Icon" class = "instagram-icon"></a>
+        <a href="https://music.apple.com/na/artist/zento-box/1602005404" target="_blank" rel="noopener noreferrer" class="instagram-link">
+          <img src="applemusic-icon.png" alt="Apple Music Icon" class = "instagram-icon"></a>
+        <a href="https://www.youtube.com/@zzzenya2455" target="_blank" rel="noopener noreferrer" class="instagram-link">
+          <img src="youtube-icon.png" alt="YouTube Icon" class = "instagram-icon"></a>
+      </div>
+      <div id = "banner">
+        <h4> PORTLAND --> LOS ANGELES </h4>
+      </div>
+    </div>
+    <div id = "nav"></div>
     <div id = "box">
-    <img src = "IMG_5798.JPEG" class = "one">
     <p>
-      I'm Zenya Bian and I am a freshmen here at Westview High School. I took Web Design 1 because I've always been interested in creating websites and I like to experiment with online visuals. I also like to draw, make 3D models, and make my own music on Garageband. My time in Web Design so far has been very interesting and I plan to take Web Design 2 next year.
+      i love music bc there's u and i in it.
     </p>
     <hr>
     <p>
-      Most of my hobbies are art-related, such as making music or making art. I also dance outside of school and enjoy long walks with my dog. I usually spend school breaks playing video games, though my favorite categories are racing games (like Mario Kart) and architecture games (like Roller Coaster Tycoon). I also love learning about world cultures and enjoy travelling outside of the country. I am hoping to be fluent in four languages before I graduate from high school.
+      TURN ON THE OXOXOX
     </p>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4DNElmxxLgt0GL5QRQXTXv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
