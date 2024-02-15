@@ -47,14 +47,14 @@
       font-size: 5.2vw;
       opacity: 1;
       animation: opacity 1.7s ease-in-out infinite;
-      text-decoration: underline;
     }
     h3 a {
-      text-decoration: none;
+      text-decoration: underline;
       color: white;
     }
     h3 a:hover {
-      text-color: orange;
+      color: orange;
+      text-decoration-color: underline orange;
     }
     .social-link {
       position: absolute;
@@ -67,7 +67,7 @@
     .social-link img {
       width: 30px;
       height: auto;
-      transition: transform 0.3s ease;
+      transition: transform 0.2s ease;
     }
     .social-link a:hover img {
       transform: scale(1.2);
@@ -98,10 +98,17 @@
       color: white;
       font-size: 12pt;
       font-family: ModernSansLight;
+      letter-spacing: 1.5px;
     }
     iframe {
       width: 100%;
-      margin: 0px;
+    }
+    .two {
+      width: 100%;
+    }
+    .copyright{
+      font-size: 8pt;
+      font-family: Coolvetica;
     }
     @font-face {
       font-family: Coolvetica;
@@ -130,8 +137,27 @@
         opacity: 0;
       }
     }
+    @media screen and (min-width: 768px) {
+      .one {
+        max-width: 450px;
+      }
+      h3{
+        font-size: 28px;
+      }
+      #banner {
+        max-width: 450px;
+      }
+      h4{
+        font-size: 13pt;
+        letter-spacing: 1px;
+      }
+      #box{
+        max-width: 450px;
+      }
+    }
   </style>
   <title>Zento Box</title>
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
 </head>
 <body>
 <div class="headers">
@@ -159,8 +185,15 @@
 <div id="box">
   <p>i love music bc there's u and i in it.</p>
   <hr>
-  <p> TURN ON THE OXOXOX </p>
-  <iframe src="https://open.spotify.com/embed/track/4DNElmxxLgt0GL5QRQXTXv?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <p> SO TURN ON THE (B)AUX </p>
+  <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/7hbAZyqZkfV4WkkCqiFGy7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <p>hello fair lady...</p>
+  <img src="sickguitar.JPEG" class="two">
+  <p>do you know...</p>
+  <img src="beachpic.JPEG" class="two">
+  <p>YOU DRIVE ME CRAZY</p>
+  <img  src="dreamyeyes.jpg" class="two">
+  <p class = "copyright">MADE BY ZENTO BOX 2024</p>
 </div>
 </body>
 </html>
